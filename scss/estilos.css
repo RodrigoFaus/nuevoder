@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* colores */
+.navbar {
+  background-color: rgb(15, 15, 15);
+}
+
+.ancla {
+  width: 5%;
+}
+.ancla .logo {
+  width: 100%;
+}
+
+.menu-hmb {
+  gap: 4em;
+}
+
+.nav-item a {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: white;
+}
+
+/* Contenido principal - imagenes background del main */
+.principal {
+  padding: 0 !important;
+  position: relative;
+  width: 75% !important;
+  margin-top: 2em !important;
+}
+.principal h1 {
+  position: absolute;
+  font-size: 3.5em;
+  font-weight: 700;
+  width: 100%;
+  font-family: "Abril Fatface", cursive !important;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.principal img {
+  background-image: url(../multimedia/4.2.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px !important;
+}
+
+.card-info {
+  margin-top: 4em;
+}
+
+.img-markenting {
+  width: 100%;
+}
+
+/* Personas */
+.subt-personas {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+}
+
+.card-body h3 {
+  font-weight: 700;
+}
+.card-body p {
+  font-size: 1.3em;
+}
+
+div .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div .col .card {
+  width: 60%;
+}
+
+#servicios {
+  overflow-x: hidden !important;
+}
+
+.titulo-servicios {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+}
+
+.max-width {
+  width: 50vw;
+  max-width: 50vw;
+}
+
+.div-cliente {
+  padding: 0;
+}
+
+.titulo-cliente {
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+  height: 79vh;
+}
+
+.form-label, .color-h1 {
+  color: white;
+}
+
+.texto-wp {
+  text-align: center;
+  color: white;
+}
+
+.wp-btn {
+  font-size: 3.2em;
+  color: #25d366;
+}
+
+.footer {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  margin: 0 !important;
+}
+.footer p {
+  font-size: 1.4em;
+  margin: 0;
+  text-align: center;
+}
+.footer a {
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  font-size: 1.1em;
+}
+.redes .bi-facebook {
+  text-decoration: none;
+  color: #3b5998;
+}
+.redes .bi-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.redes .bi-twitter {
+  color: #00acee;
+}
+
+@media (max-width: 820px) {
+  * {
+    overflow-x: hidden !important;
+  }
+  .preloader {
+    position: fixed;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: black;
+    transition: all 2s;
+    z-index: 10;
+  }
+  .preloader > .preloader-box {
+    position: absolute !important;
+    left: 41% !important;
+    width: 500px !important;
+    height: 150px !important;
+    margin: -15px 20px 0 -150px;
+    -webkit-perspective: 200px;
+  }
+  .preloader .preloader-box > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    width: 20px !important;
+    height: 25px !important;
+    background: #CCC;
+    text-align: center;
+    line-height: 25px;
+    font-family: Verdana;
+    font-size: 15px !important;
+    color: #FFF;
+    overflow-y: hidden;
+  }
+  /* Encabezado */
+  .menu-hmb {
+    gap: 20px !important;
+    padding-top: 10px;
+  }
+  .menu-hmb .navbar-toggler-icon {
+    height: 2.2em;
+  }
+  .ancla {
+    width: 20%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .navbar-nav li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  /* Principal */
+  .principal {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+  .principal img {
+    min-height: 80vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .principal h1,
+.principal h2 {
+    font-size: 1.9rem;
+    top: 79%;
+  }
+  h1,
+h2,
+h5,
+p,
+label {
+    overflow-y: hidden;
+  }
+  /* Nosotros */
+  .col {
+    width: 100%;
+  }
+  .card {
+    width: 100% !important;
+  }
+  .card-info {
+    margin-top: 0;
+  }
+  .card-body p {
+    font-size: 1em;
+  }
+  #servicios .card {
+    width: 90% !important;
+  }
+  /* Contacto */
+  .div-label {
+    width: 100% !important;
+  }
+  .form-contacto {
+    height: 10%;
+  }
+  .form-contacto div a {
+    overflow-y: hidden !important;
+  }
+  /* Footer */
+  .footer {
+    gap: 0.4em;
+  }
+  .titulo-cliente {
+    font-size: 4em !important;
+    margin-bottom: 150px !important;
+  }
+}
+/* Underline Reveal */
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  height: 4px;
+  transform: translateY(4px);
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-reveal:hover:before,
+.hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+  transform: translateY(0);
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.5);
+}
+
+/* Box Shadow Outset */
+.hvr-box-shadow-outset {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+
+.hvr-box-shadow-outset:hover, .hvr-box-shadow-outset:focus, .hvr-box-shadow-outset:active {
+  box-shadow: 2px 2px 2px rgba(143, 21, 21, 0.6);
+}
+
+.form-control:hover {
+  background-color: #c7c6c6;
+  transition: 0.3s;
+}
+
+/* Glow */
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 19px rgba(255, 255, 255, 0.6);
+}
+
+#servicios .card:hover {
+  outline: 2.5px solid black;
+}
+
+.wp-btn:hover {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #232526;
+  background: linear-gradient(to top, #232526, #414345);
+}
+
+.preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  transition: all 1.8s;
+  z-index: 10;
+}
+
+.preloader > .preloader-box {
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  left: 41%;
+  margin: -15px 0 0 -150px;
+  -webkit-perspective: 200px;
+}
+
+.preloader .preloader-box > div {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #CCC;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-family: Verdana;
+  font-size: 30px;
+  color: #FFF;
+  overflow-y: hidden;
+}
+
+.preloader .preloader-box > div:nth-child(1) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 0ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(2) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 75ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(3) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 150ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(4) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 225ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(5) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 300ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(6) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 375ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(7) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 450ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(8) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 525ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(9) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 600ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(10) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 675ms infinite alternate;
+}
+
+.preloader .preloader-box > div:nth-child(11) {
+  background: black;
+  margin-right: 15px;
+  -webkit-animation: movement 600ms ease 750ms infinite alternate;
+}
+
+@-webkit-keyframes movement {
+  from {
+    -webkit-transform: scale(1) translateY(0px) rotateX(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.5) translateY(-25px) rotateX(4deg);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+    background: black;
+    color: white;
+  }
+}/*# sourceMappingURL=estilos.css.map */

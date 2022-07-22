@@ -1,0 +1,46 @@
+.footer {
+
+    background-color: $bkg-secundario;
+    color: white;
+    margin: 0 !important;
+
+    p {
+
+        font-size: 1.4em;
+        margin: 0;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.4em;
+        text-decoration: none;
+    }
+
+
+}
+
+.redes {
+    @include centrado;
+    gap: 3em;
+    font-size: 1.1em;
+
+    .bi-facebook {
+
+        text-decoration: none;
+        color: map-get($color-redes , facebook);
+    }
+
+    .bi-instagram {
+
+        background: map-get($color-redes , instagram);
+        ;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bi-twitter {
+        color: map-get($color-redes , twitter);
+
+    }
+}

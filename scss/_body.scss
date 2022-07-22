@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    @include color-principal;
+
+}
+
+
+.preloader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    transition: all 1.8s;
+    z-index: 10;
+}
+
+
+.preloader>.preloader-box {
+
+
+    position: absolute;
+    width: 650px;
+    height: 50px;
+    left: 41%;
+    margin: -15px 0 0 -150px;
+    -webkit-perspective: 200px;
+
+
+}
+
+
+
+.preloader .preloader-box>div {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #CCC;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-family: Verdana;
+    font-size: 30px;
+    color: #FFF;
+    overflow-y: hidden;
+
+}
+
+.preloader .preloader-box>div:nth-child(1) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 0ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(2) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 75ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(3) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 150ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(4) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 225ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(5) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 300ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(6) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 375ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(7) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 450ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(8) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 525ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(9) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 600ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(10) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 675ms infinite alternate;
+}
+
+.preloader .preloader-box>div:nth-child(11) {
+    background: black;
+    margin-right: 15px;
+    -webkit-animation: movement 600ms ease 750ms infinite alternate;
+}
+
+
+
+@-webkit-keyframes movement {
+
+    from {
+        -webkit-transform: scale(1.0) translateY(0px) rotateX(0deg);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    to {
+        -webkit-transform: scale(1.5) translateY(-25px) rotateX(4deg);
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+        background: black;
+        color: white;
+    }
+}

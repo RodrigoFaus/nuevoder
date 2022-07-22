@@ -1,0 +1,13 @@
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin color-principal {
+    background: #232526;
+    background: -webkit-linear-gradient(to top, #414345, #232526);
+    background: linear-gradient(to top, #232526, #414345);
+
+}
